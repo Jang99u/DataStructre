@@ -78,7 +78,7 @@ public:
     {
         CheckIndex(n); CheckIndex(m);
         adjacent[n][m] = adjacent[m][n] = true;
-        degree[n] = degree[m] = false;
+        degree[n]++; degree[m]++;
     }
 
     void DeleteVertex(int n)
